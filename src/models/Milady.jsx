@@ -17,7 +17,10 @@ const Milady = ({ isRotating, ...props }) => {
   }, [actions, isRotating])
 
   return (
-    <mesh {...props} ref={ref}>
+    <mesh 
+    position={[.25,-1.5,-4]} 
+    {...props} ref={ref}
+    >
         <primitive object = {scene} />
     </mesh>
   )
